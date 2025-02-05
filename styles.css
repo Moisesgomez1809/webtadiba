@@ -1,0 +1,233 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+/* ---- NAVBAR ---- */
+header {
+    background: #4e1f88;
+    padding: 15px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* ---- SECCIÓN HERO (BIENVENIDA) ---- */
+.hero {
+    background: linear-gradient(rgba(78, 31, 136, 0.7), rgba(78, 31, 136, 0.7)), 
+                url('https://media.istockphoto.com/id/135167391/es/foto/braille-de-ni%C3%B1a-eading.jpg?s=612x612&w=0&k=20&c=z1DIjOct2-jHfEAdhl-yTomfS4eXMQkL0yjGsYsjnmg=');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 120px 10%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px; /* Más grande */
+}
+
+.hero h1 {
+    font-size: 90px;
+    font-weight: bold;
+    max-width: 600px;
+    line-height: 1.1; /* Reduce el espacio entre líneas */
+    margin-bottom: 0px; /* Elimina separación inferior */
+}
+
+.hero h1 span {
+    font-size: 55px;
+    display: block;
+    margin-top: -20px; /* Lo acerca aún más a "BIENVENIDO" */
+}
+
+.hero img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+}
+.hero p{
+    font-size: 20px;
+    display: block;
+   
+}
+/* ---- SECCIÓN DESCARGA ---- */
+.download {
+    background: white;
+    padding: 50px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Contenedor de la imagen */
+.download img {
+    width: 40%; /* Ajusta el tamaño de la imagen */
+    max-width: 600px;
+}
+
+/* Contenedor del texto */
+.download-text {
+    width: 50%;
+    text-align: left;
+}
+
+.download-text h2 {
+    font-size: 50px;
+    color: #4e1f88;
+}
+
+.download-text p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Botones */
+.btn-android, .btn-ios {
+    display: inline-block;
+    padding: 15px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 35px;
+    font-size: 18px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.btn-android {
+    background: #32cd32;
+}
+
+.btn-ios {
+    background: #333;
+}
+
+/* ---- SECCIÓN CÓMO FUNCIONA ---- */
+.how-it-works {
+    background: #7d43bd;
+    padding: 40px 20px;
+    color: white;
+}
+
+.how-it-works h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    color: black;
+}
+
+.video-container h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color:  #7d43bd;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* ---- FOOTER ---- */
+footer {
+    background: #4e1f88;
+    padding: 20px;
+}
+
+footer img {
+    width: 80px;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 50px; /* Reduce el tamaño del título */
+    }
+
+    .hero h1 span {
+        font-size: 35px; /* Reduce el tamaño del subtítulo */
+        margin-top: -10px; /* Ajusta la separación */
+    }
+    .download {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .download img {
+        width: 80%; /* Imagen más grande en móviles */
+        margin-bottom: 20px;
+    }
+
+    .download-text {
+        width: 100%;
+        text-align: center;
+    }
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav a {
+        margin: 5px 0;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn-android, .btn-ios {
+        width: 100%;
+    }
+
+    .videos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
